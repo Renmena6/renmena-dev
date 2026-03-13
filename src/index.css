@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Times New Roman", Times, serif; /* O una de Google Fonts como 'Fraunces' */
+}
+
+:root {
+  /* Color crema tipo papel de Cory */
+  --bg-paper: #f2f0e9; 
+}
+
+body {
+  background-color: var(--bg-paper);
+  /* Textura sutil de ruido (opcional) */
+  background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+  color: #1a1a1a;
+}

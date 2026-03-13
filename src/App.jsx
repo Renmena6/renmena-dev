@@ -75,7 +75,7 @@ function App() {
 
           <div className="col-span-2 p-6 flex items-center justify-center gap-10 text-[10px] font-black uppercase tracking-[0.2em]">
             <a href="#projects" className="hover:text-emerald-600 border-b-2 border-transparent hover:border-emerald-600 transition-all">Projects</a>
-            <a href="#tech" className="hover:text-emerald-600 border-b-2 border-transparent hover:border-emerald-600 transition-all">Tech Stack</a>
+            <a href="#tech" className="hover:text-emerald-600 border-b-2 border-transparent hover:border-emerald-600 transition-all">Tech </a>
             <a href="#contact" className="hover:text-emerald-600 border-b-2 border-transparent hover:border-emerald-600 transition-all">Contact</a>
           </div>
 
@@ -99,18 +99,19 @@ function App() {
             </h2>
           </div>
 
-          {/* PERFIL CON TU FOTO REAL */}
-          <div className="p-8 border-l border-black/10 flex flex-col items-center justify-center bg-[#fcfaf7]/50">
-            <div className="relative mb-6">
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-full blur opacity-20"></div>
+          {/* PERFIL CON FOTO MÁS GRANDE */}
+          <div className="p-10 border-l border-black/10 flex flex-col items-center justify-center bg-[#fcfaf7]/50">
+            <div className="relative mb-8">
+              {/* Brillo de fondo ajustado al nuevo tamaño */}
+              <div className="absolute -inset-2 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-full blur opacity-20"></div>
               <img
                 src={fotoPerfil}
                 alt="Renzo Mena Profile"
-                className="relative w-28 h-28 rounded-full object-cover border-2 border-white shadow-lg"
+                className="relative w-40 h-40 rounded-full object-cover border-4 border-white shadow-2xl"
               />
             </div>
-            <p className="text-xs text-center font-medium leading-relaxed opacity-70 max-w-[180px]">
-              Especializado en arquitecturas escalables y diseño de interfaces de alto impacto.
+            <p className="text-xs text-center font-medium leading-relaxed opacity-70 max-w-[200px]">
+              Desarrollador Web Full Stack enfocado en crear soluciones digitales escalables y de alto rendimiento.
             </p>
           </div>
         </section>
@@ -127,7 +128,7 @@ function App() {
           ))}
         </section>
 
-        {/* PROYECTOS CON TUS IMÁGENES REALES */}
+        {/* PROYECTOS */}
         <section id="projects" className="grid grid-cols-1 md:grid-cols-2">
           <ProjectCard
             title="GenSite"
